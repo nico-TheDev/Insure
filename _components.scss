@@ -1,0 +1,39 @@
+$DarkViolet: hsl(256, 26%, 20%);
+$GrayishBlue: hsl(216, 30%, 68%);
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$VeryLightGray: hsl(0, 0%, 98%);
+// BUTTONS
+
+.btn{
+    text-transform: uppercase;
+    border: 1px solid $VeryDarkViolet;
+    background-color: white;
+    color:$VeryDarkViolet;
+    padding:0.5rem 1.5rem;
+    position: relative;
+    z-index: 3;
+
+    &:hover{
+        background-color: $VeryDarkViolet;
+        color: white;
+    }
+
+    &--dark{
+        background-color: $DarkViolet;
+        color: white;
+        border-color: white;
+        &:hover{
+            background-color: white;
+            color:$DarkViolet;
+        }
+    }
+}
+
+
+// FEATURES
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
