@@ -7,70 +7,91 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Insure landing page</title>
-
   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
+
   <header class="header">
     <nav class="navbar">
       <div class="container">
-        <img src="./images/logo.svg" alt="logo" class="navbar__logo">
-        <ul class="navbar__list">
+        <div class="navbar__logo">
+          <img src="./images/logo.svg" alt="Logo" class="navbar__img">
+        </div>
+        <div class="navbar__list">
           <li class="navbar__item"><a href="#" class="navbar__link">How we work</a></li>
           <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
           <li class="navbar__item"><a href="#" class="navbar__link">Account</a></li>
           <li class="navbar__item"><a href="#" class="btn">View plans</a></li>
-        </ul>
+        </div>
+
+        <div class="navbar__mobile">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox__label">
+            <img src="./images/icon-hamburger.svg" alt="" class="navbar__burger icon">
+            <img src="./images/icon-close.svg" alt="" class="navbar__close icon">
+          </label>
+
+          <ul class="menu">
+            <li class="menu__list"><a href="" class="menu__link">How we work</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Blog</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Account</a></li>
+            <li class="menu__list"><a href="" class="menu__link btn btn--dark">view plans</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </nav>  
 
     <div class="content">
-      <div class="container">
-        <div class="content__text">
-          <h1 class="content__title">Humanizing your insurance.</h1>
-          <p class="content__description">
-            Get your life insurance coverage easier and faster. We blend our expertise 
-            and technology to help you find the plan that’s right for you. Ensure you 
-            and your loved ones are protected.
-          </p>
+      <img src="./images/image-intro-mobile.jpg" alt="" class="content__mobile">
+        <div class="container">
+          <div class="content__text">
+            <h1 class="content__title title">Humanizing your insurance.</h1>
+            <p class="content__desc">
+              Get your life insurance coverage easier and faster. We blend our expertise 
+              and technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.
+            </p>
 
-          <a href="#" class="btn btn--dark">View plans</a>
+            <a href="#" class="btn btn--dark">View plans</a>
+          </div>
+
+          <div class="content__cover">
+            <img src="./images/image-intro-desktop.jpg" alt="photo header" class="content__img">
+          </div>
         </div>
-  
-        <div class="content__cover">
-          <img src="./images/image-intro-desktop.jpg" alt="photo" class="content__img">
-        </div>
-      </div>
-  
     </div>
-  </header>
 
+
+  </header>
 
   <section class="section-features">
     <div class="container">
-      <h2 class="content__title--2 content__title">We're different</h2>
+      <h2 class="title section-title">We’re different</h2>
       <div class="features">
         <div class="feature">
-          <img src="./images/icon-snappy-process.svg" alt="" class="feature__logo">
-          <h3 class="feature__title">Snappy process</h3>
-          <p class="feature__text">
+          <img src="./images/icon-snappy-process.svg" alt="icon features" class="feature__icon">
+          <h2 class="feature__title">Snappy process</h2>
+          <p class="feature__desc">
             Our application process can be completed in minutes, not hours. Don’t get 
             stuck filling in tedious forms.
           </p>
         </div>
+
         <div class="feature">
-          <img src="./images/icon-affordable-prices.svg" alt="" class="feature__logo">
-          <h3 class="feature__title">Affordable Prices</h3>
-          <p class="feature__text">
+          <img src="./images/icon-affordable-prices.svg" alt="icon features" class="feature__icon">
+          <h2 class="feature__title">Affordable prices</h2>
+          <p class="feature__desc">
             We don’t want you worrying about high monthly costs. Our prices may be low, 
-            but we still offer the best coverage possible.
+            but we still offer the best coverage possible. tedious forms.
           </p>
         </div>
+
         <div class="feature">
-          <img src="./images/icon-people-first.svg" alt="" class="feature__logo">
-          <h3 class="feature__title">People first</h3>
-          <p class="feature__text">
+          <img src="./images/icon-people-first.svg" alt="icon features" class="feature__icon">
+          <h2 class="feature__title">People First</h2>
+          <p class="feature__desc">
             Our plans aren’t full of conditions and clauses to prevent payouts. We make 
             sure you’re covered when you need it.
           </p>
@@ -78,6 +99,88 @@
       </div>
     </div>
   </section>
+
+  <section class="section-more">
+    <div class="container">
+      <h2 class="section-title more-title">
+        Find out more about how we work
+      </h2>
+
+      <a href="#" class="btn btn--dark">How we work</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__social">
+        <div class="footer__logo">
+          <img src="./images/logo.svg" alt="" class="footer__img">
+        </div>
+          <ul class="footer__social-links">
+            <li class="footer__item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="/images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="/images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="/images/sprite.svg#icon-pinterest-with-circle"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="/images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        
+      </div>
+
+      <div class="footer__destination">
+        <ul class="footer__list">
+          <h4 class="footer__title">OUR COMPANY</h4>
+          <li class="footer__item"><a href="#" class="footer__link">how we work</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">why insure?</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">view plans</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">reviews</a></li>
+        </ul>
+        <ul class="footer__list">
+          <h4 class="footer__title">Help me</h4>
+          <li class="footer__item"><a href="#" class="footer__link">faq</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">terms of use</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">privacy policy</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">cookies</a></li>
+        </ul>
+        <ul class="footer__list">
+          <h4 class="footer__title">contact</h4>
+          <li class="footer__item"><a href="#" class="footer__link">sales</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">support</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">live chat</a></li>
+        </ul>
+        <ul class="footer__list">
+          <h4 class="footer__title">Others</h4>
+          <li class="footer__item"><a href="#" class="footer__link">careers</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">press</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">licenses</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
   <!-- How we work
   Blog
   Account
@@ -85,7 +188,7 @@
 
   Humanizing your insurance.
 
-  
+
 
   View plans
 
@@ -93,17 +196,16 @@
 
   Snappy Process
 
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
   
+
+  Affordable Prices
+
+ 
 
   People First
 
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
+ 
 
-  Find out more about how we work
 
   How we work
 
@@ -133,8 +235,8 @@
   Press
   Licenses -->
 
-<!--   
-  <div class="attribution">
+  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
